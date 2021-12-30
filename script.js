@@ -1,5 +1,7 @@
 var container = document.getElementById("container");
-let gridNumber = 100;
+let gridNumber = 8;
+
+
 
 function grid() {
     let gridArea = gridNumber * gridNumber;
@@ -9,13 +11,16 @@ function grid() {
         container.style.gridTemplateColumns = `repeat(${gridNumber}, 1fr)`;
         container.style.gridTemplateColumns = `repeat(${gridNumber}, 1fr)`;
         cell.innerHTML = "";
+        cell.classList.add("cell")
         container.appendChild(cell);
     }
     let gridPixels = container.querySelectorAll("div");
     gridPixels.forEach(gridPixel => gridPixel.addEventListener("mouseover", function (event) {
         // highlight the mouseover target
-        event.target.style.backgroundColor = "orange";
+        this.style.backgroundColor = `hsl(${Math.floor(Math.random() * 360)}, 90%, 50%)`
 
     }));
 }
+
+
 grid() = true;

@@ -17,9 +17,9 @@ body {
 
 }
 
-div,
+
 .cell {
-    border: 2x sold blck;
+    border: 2px solid black;
 }
 
 .wrapper {
