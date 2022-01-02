@@ -1,24 +1,29 @@
 var container = document.getElementById("container");
-let gridNumber = prompt("enter number of grids eg: 16,36...");
+let gridNumber = 8;
+let gray = document.querySelector("#gray")
+let rainbow = document.querySelector("#rainbow")
+let colorPicker = document.querySelector("#colorpicker")
+let color = `hsl(0,0%,0%)`;
 
-let playersSelection = "gray";
 
-function colorGen() {
-    function randomHsl() {
-        return Math.floor(Math.random() * 360);
-    }
-    let rainbow = `hsl(${randomHsl()}, 100%, 50%)`
-    
-    let gray = `rgba(108, 91, 100, 0.94)`;
+gray.addEventListener("mouseover", function(){
+    color = "gray";
 
-    if (playersSelection = "rainbow") {
-        this.style.backgroundColor = rainbow;
-     }
-     else if (playerselection = "gray") {
-         this.style.backgroundColor = gray;
-     }
+})
+rainbow.addEventListener("mouseover", function(){
+    color = "rainbow";
 
-}
+})
+
+colorPicker.addEventListener("input", function() {
+    let selectedColor = colorPicker.value;
+    color = selectedColor 
+})
+
+
+
+
+
 
 function grid() {
     let gridArea = gridNumber * gridNumber;
@@ -36,8 +41,26 @@ function grid() {
 
 }
 
+function colorGen() {
+    function randomHsl() {
+        return Math.floor(Math.random() * 360);
+    }
+    let rainbow = `hsl(${randomHsl()}, 100%, 50%)`
+    
+    let gray = `rgba(108, 91, 100, 0.94)`;
+
+    if (color == "rainbow") {
+        this.style.backgroundColor = rainbow;
+     }
+     else if (color == "gray") {
+         this.style.backgroundColor = gray;
+     }
+     else {
+         this.style.backgroundColor = color;
+     }
+
+}
 
 
-
-grid() = true;
+grid()
 
