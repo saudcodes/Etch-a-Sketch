@@ -1,23 +1,23 @@
 var container = document.getElementById("container");
-let gridNumber = 8;
+let gridNumber = 16;
 let gray = document.querySelector("#gray")
 let rainbow = document.querySelector("#rainbow")
 let colorPicker = document.querySelector("#colorpicker")
 let color = `hsl(0,0%,0%)`;
 
 
-gray.addEventListener("mouseover", function(){
+gray.addEventListener("mouseover", function () {
     color = "gray";
 
 })
-rainbow.addEventListener("mouseover", function(){
+rainbow.addEventListener("mouseover", function () {
     color = "rainbow";
 
 })
 
-colorPicker.addEventListener("input", function() {
+colorPicker.addEventListener("input", function () {
     let selectedColor = colorPicker.value;
-    color = selectedColor; 
+    color = selectedColor;
 })
 
 
@@ -37,7 +37,7 @@ function grid() {
         container.appendChild(cell);
     }
     let gridPixels = container.querySelectorAll("div");
-    gridPixels.forEach(gridPixel => gridPixel.addEventListener("mouseover",colorGen ));
+    gridPixels.forEach(gridPixel => gridPixel.addEventListener("mouseover", colorGen));
 
 }
 
@@ -46,21 +46,18 @@ function colorGen() {
         return Math.floor(Math.random() * 360);
     }
     let rainbow = `hsl(${randomHsl()}, 100%, 50%)`
-    
+
     let gray = `rgba(108, 91, 100, 0.94)`;
 
     if (color == "rainbow") {
         this.style.backgroundColor = rainbow;
-     }
-     else if (color == "gray") {
-         this.style.backgroundColor = gray;
-     }
-     else {
-         this.style.backgroundColor = color;
-     }
+    } else if (color == "gray") {
+        this.style.backgroundColor = gray;
+    } else {
+        this.style.backgroundColor = color;
+    }
 
 }
 
 
 grid()
-
