@@ -17,7 +17,7 @@ rainbow.addEventListener("mouseover", function(){
 
 colorPicker.addEventListener("input", function() {
     let selectedColor = colorPicker.value;
-    color = selectedColor 
+    color = selectedColor; 
 })
 
 
