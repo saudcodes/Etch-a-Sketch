@@ -1,9 +1,13 @@
 var container = document.getElementById("container");
-let gridNumber = 16;
+
 let gray = document.querySelector("#gray")
 let rainbow = document.querySelector("#rainbow")
 let colorPicker = document.querySelector("#colorpicker")
 let color = `hsl(0,0%,0%)`;
+let gridRange = document.querySelector(".gridrange")
+let gridValue = gridRange.value
+let value = document.querySelector("#value")
+value.textContent = gridValue
 
 
 gray.addEventListener("mouseover", function () {
@@ -26,6 +30,7 @@ colorPicker.addEventListener("input", function () {
 
 
 function grid() {
+    let gridNumber = gridValue;
     let gridArea = gridNumber * gridNumber;
 
     for (let i = 0; i < gridArea; i++) {
