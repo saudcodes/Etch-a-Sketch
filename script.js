@@ -1,5 +1,5 @@
 var container = document.getElementById("container");
-let gridNumber = 2; 
+
 let gray = document.querySelector("#gray")
 let rainbow = document.querySelector("#rainbow")
 let colorPicker = document.querySelector("#colorpicker")
@@ -9,11 +9,11 @@ let gridRange = document.querySelector(".gridrange")
 
 let value = document.querySelector("#value")
 
-gridRange.addEventListener("change", function() {
-    let gridValue = gridRange.value;
-    value.textContent = gridValue;
+gridRange.addEventListener("mouseup", function() {
+    let gridValue = gridRange.value
     
-    gridNumber = gridValue;
+    grid(gridValue)
+    value.textContent = gridValue;
     
 })
 
@@ -36,7 +36,7 @@ colorPicker.addEventListener("input", function () {
 
 
 
-function grid() {
+function grid(gridNumber) {
     
     let gridArea = gridNumber * gridNumber;
 
@@ -72,4 +72,4 @@ function colorGen() {
 }
 
 
-grid()
+grid(2)
