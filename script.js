@@ -11,7 +11,7 @@ let value = document.querySelector("#value")
 
 gridRange.addEventListener("mouseup", function() {
     let gridValue = gridRange.value
-    
+    container.innerHTML = "";
     grid(gridValue)
     value.textContent = gridValue;
     
