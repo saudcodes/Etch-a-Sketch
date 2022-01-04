@@ -1,6 +1,6 @@
 var container = document.getElementById("container");
 
-let gray = document.querySelector("#gray")
+let erase = document.querySelector("#erase")
 let rainbow = document.querySelector("#rainbow")
 let colorPicker = document.querySelector("#colorpicker")
 let color = `hsl(0,0%,0%)`;
@@ -17,8 +17,8 @@ gridRange.addEventListener("mouseup", function() {
     
 })
 
-gray.addEventListener("mouseover", function () {
-    color = "gray";
+erase.addEventListener("mouseover", function () {
+    color = "erase";
 
 })
 rainbow.addEventListener("mouseover", function () {
@@ -59,12 +59,12 @@ function colorGen() {
     }
     let rainbow = `hsl(${randomHsl()}, 100%, 50%)`
 
-    let gray = `rgba(108, 91, 100, 0.94)`;
+    let erase = `#FFFFFF`;
 
     if (color == "rainbow") {
         this.style.backgroundColor = rainbow;
-    } else if (color == "gray") {
-        this.style.backgroundColor = gray;
+    } else if (color == "erase") {
+        this.style.backgroundColor = erase;
     } else {
         this.style.backgroundColor = color;
     }
