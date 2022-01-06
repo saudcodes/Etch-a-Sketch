@@ -1,5 +1,5 @@
 body {
-
+    background-color: black !important;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -9,16 +9,18 @@ body {
 
 #container {
     display: grid;
-    width: 50%;
-    height: 60%;
+    width: 70%;
+    height: 80%;
     position: absolute;
-
-    border: 2px solid rgb(255, 45, 45);
+    background-color: rgb(255, 255, 255);
+    border: 12px solid rgb(255, 45, 45);
 
 }
 
 
-
+.cell {
+    border: 2px solid black;
+}
 
 .wrapper {
     height: 60vh;
@@ -29,4 +31,59 @@ body {
     margin: 30px auto;
     position: relative;
     border: 2px solid black;
+}
+
+.bottom {
+    border: 2px solid green;
+}
+
+.form-range {
+    position: relative;
+    display: flex;
+    width: 100px;
+}
+
+ody {
+    background-color: black !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#container {
+    display: grid;
+    width: 70%;
+    height: 80%;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    border: 12px solid rgb(255, 45, 45);
+
+}
+
+
+.cell {
+    border: 2px solid black;
+}
+
+.wrapper {
+    height: 60vh;
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto;
+    position: relative;
+    border: 2px solid black;
+}
+
+.bottom {
+    border: 2px solid green;
+}
+
+.form-range {
+    position: relative;
+    display: flex;
+    width: 100px;
 }

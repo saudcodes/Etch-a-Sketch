@@ -16,11 +16,13 @@
 </head>
 
 <body>
-    <div class="buttons">
-        <button id="assist"> assisted grid</button>
+    <h1 class=" text-white">Etch-A-Sketch</h1>
+    <main class="border border-danger">
+    <div class="buttons border border-success">
+
         <button id="rainbow"> rainbow</button>
         <button id="erase">erase</button>
-        <input id="colorpicker" type="color" value="#fffff">
+      <button> ddd<input id="colorpicker" type="color" value="#fffff"></button> 
     </div>
 
     <div class="wrapper">
@@ -29,14 +31,17 @@
         </div>
     </div>
 
-    <div>
-        <label class="form-label" data-bs-toggle="tooltip" for="customRange2">Example range<span
-                id="value"></span></label>
-        <div class="range">
-            <input type="range" class="form-range gridrange" min="0" max="64" data-bs-toggle="tooltip"
-                id="customRange2" />
+    <div class="bottom container w-50">
+        <div class="border border-primary d-flex flex-column ">
+            <label class="form-label text-white" data-bs-toggle="tooltip" for="customRange2">Example range<span
+                    id="value"></span></label>
+            <div class="range">
+                <input type="range" class="form-range gridrange" min="2" max="64" value="2" data-bs-toggle="tooltip"
+                    id="customRange2" />
+            </div>
         </div>
     </div>
+</main>
 </body>
 
 </html>
