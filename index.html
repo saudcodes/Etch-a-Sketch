@@ -6,23 +6,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+<!-- Google Font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"> 
+    
     <!-- MDB -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.1/mdb.min.css" rel="stylesheet" />
 
     <!-- MDB JS-->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.1/mdb.min.js"></script>
+    
+    <!-- Files -->
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
-    <h1 class=" text-white">Etch-A-Sketch</h1>
+    <h1 class=" text-white header">Etch-A-Sketch</h1>
     <main class="border border-danger">
     <div class="buttons border border-success">
 
-        <button id="rainbow"> rainbow</button>
-        <button id="erase">erase</button>
-      <button> ddd<input id="colorpicker" type="color" value="#fffff"></button> 
+        <button id="rainbow" class="btn btn-primary"> rainbow</button>
+        <button id="erase" class="btn btn-primary">erase</button>
+      <button style="height: 40px;" class="btn btn-primary "> Select Color<input id="colorpicker" style="width:fit-content; height:max-content; border: none;" type="color" value="#fffff"></button> 
     </div>
 
     <div class="wrapper">
