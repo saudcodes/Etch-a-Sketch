@@ -13,7 +13,7 @@ gridRange.addEventListener("mouseup", function() {
     let gridValue = gridRange.value
     container.innerHTML = "";
     grid(gridValue)
-    value.textContent = gridValue;
+    value.textContent = gridValue + " x " + gridValue;
     
 })
 
