@@ -24,9 +24,9 @@
 
 <body>
     <h1 class=" text-white mb-5 header">Etch-A-Sketch</h1>
-    <main class="border main border-danger">
-    <div class="buttons  position-absolute w-100 border border-success">
-        <button id="default" class="btn mx-2 "> Default</button>
+    <main class=" main ">
+    <div class="buttons  position-absolute w-100 ">
+        <button id="black" class="btn mx-2 "> Black</button>
         <button id="rainbow" class="btn mx-2 "> rainbow</button>
         <button id="erase" class="btn mx-2 ">erase</button>
       <button style="height: 40px;" class="btn mx-2 "> Select Color<input id="colorpicker" style="width:fit-content; height:max-content; border: none;" type="color" value="#fffff"></button> 
@@ -38,9 +38,9 @@
         </div>
     </div>
 
-    <div class="bottom container w-50">
-        <div class="border border-primary d-flex flex-column ">
-            <label class="form-label text-white" data-bs-toggle="tooltip" for="customRange2">Grid Size : <span
+    <div class="bottom container pb-5 w-100">
+        <div>
+            <label class="form-label fw-bold text-white" data-bs-toggle="tooltip" for="customRange2">Grid Size : <span
                     id="value"></span></label>
             <div class="range">
                 <input type="range" class="form-range gridrange" min="2" max="64" value="2" data-bs-toggle="tooltip"

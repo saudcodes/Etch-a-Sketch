@@ -1,5 +1,5 @@
 var container = document.getElementById("container");
-
+let black = document.querySelector("#black")
 let erase = document.querySelector("#erase")
 let rainbow = document.querySelector("#rainbow")
 let colorPicker = document.querySelector("#colorpicker")
@@ -8,6 +8,12 @@ let gridRange = document.querySelector(".gridrange")
 
 
 let value = document.querySelector("#value")
+
+black.addEventListener("click", function (blackSelect) {
+blackSelect = `hsl(0,0%,0%)`;
+
+color = blackSelect ;
+})
 
 gridRange.addEventListener("mouseup", function() {
     let gridValue = gridRange.value

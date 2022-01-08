@@ -21,6 +21,8 @@ h1 {
     font-family: 'Press Start 2P', cursive;
 }
 
+
+
 .main {
     position: relative;
     display: flex;
@@ -82,15 +84,19 @@ h1 {
     align-items: center;
     margin: 30px auto;
     position: relative;
-    border: 2px solid black;
+
 }
 
 .bottom {
-    border: 2px solid green;
+    position: relative;
+
+
+    column-gap: 100%;
+
 }
 
 .form-range {
     position: relative;
     display: flex;
-    width: 80%;
+    width: 40%;
 }
