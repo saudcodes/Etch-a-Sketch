@@ -1,5 +1,6 @@
 body {
-    background-color: black !important;
+    background-image: url("https://res.cloudinary.com/sauda/image/upload/v1641680905/bgneon_ln9ret.jpg");
+
     display: flex;
     flex-direction: column;
     justify-content: center;
