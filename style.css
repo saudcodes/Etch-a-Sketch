@@ -73,9 +73,7 @@ h1 {
         inset 0 0 0 0;
 }
 
-.cell {
-    border: 2px solid black;
-}
+
 
 .wrapper {
     height: 60vh;
@@ -88,15 +86,8 @@ h1 {
 
 }
 
-.bottom {
-    position: relative;
 
-
-    column-gap: 100%;
-
-}
-
-.form-range {
+.gridrange {
     position: relative;
     display: flex;
     width: 40%;

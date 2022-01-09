@@ -9,10 +9,8 @@ let gridRange = document.querySelector(".gridrange")
 
 let value = document.querySelector("#value")
 
-black.addEventListener("click", function (blackSelect) {
-blackSelect = `hsl(0,0%,0%)`;
-
-color = blackSelect ;
+black.addEventListener("click", function () {
+color = `hsl(0,0%,0%)` ;
 })
 
 gridRange.addEventListener("mouseup", function() {
@@ -33,8 +31,8 @@ rainbow.addEventListener("mouseover", function () {
 })
 
 colorPicker.addEventListener("input", function () {
-    let selectedColor = colorPicker.value;
-    color = selectedColor;
+   
+    color = colorPicker.value;
 })
 
 
