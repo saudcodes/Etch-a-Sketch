@@ -7,18 +7,17 @@ let color = `hsl(0,0%,0%)`;
 let gridRange = document.querySelector(".gridrange")
 
 
-let value = document.querySelector("#value")
 
 black.addEventListener("click", function () {
-color = `hsl(0,0%,0%)` ;
+    color = `hsl(0,0%,0%)`;
 })
 
-gridRange.addEventListener("mouseup", function() {
+gridRange.addEventListener("mouseup", function () {
     let gridValue = gridRange.value
     container.innerHTML = "";
     grid(gridValue)
     value.textContent = gridValue + " x " + gridValue;
-    
+
 })
 
 erase.addEventListener("mouseover", function () {
@@ -31,7 +30,7 @@ rainbow.addEventListener("mouseover", function () {
 })
 
 colorPicker.addEventListener("input", function () {
-   
+
     color = colorPicker.value;
 })
 
@@ -41,7 +40,7 @@ colorPicker.addEventListener("input", function () {
 
 
 function grid(gridNumber) {
-    
+
     let gridArea = gridNumber * gridNumber;
 
     for (let i = 0; i < gridArea; i++) {
